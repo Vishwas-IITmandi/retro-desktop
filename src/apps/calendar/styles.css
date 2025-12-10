@@ -1,0 +1,114 @@
+.calendar-app {
+    padding: 15px;
+    background: linear-gradient(to bottom, #0078d7, #005a9e);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 3px;
+    min-width: 320px;
+    user-select: none;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.calendar-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.calendar-nav {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.calendar-nav:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.calendar-nav:active {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.calendar-weekday {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.calendar-day:not(.empty):hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.calendar-day.empty {
+    background: transparent;
+    cursor: default;
+}
+
+.calendar-day.today {
+    background: #ffd700;
+    color: #0078d7;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.calendar-clock {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.clock-time {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+}
+
+.clock-date {
+    font-size: 14px;
+    opacity: 0.9;
+}
