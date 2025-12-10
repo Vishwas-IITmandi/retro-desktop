@@ -1,0 +1,7 @@
+.notepad-app { display: flex; flex-direction: column; height: 100%; }
+.notepad-toolbar { margin-bottom: 5px; display: flex; gap: 5px; }
+.notepad-area { 
+    flex-grow: 1; resize: none; border: 2px inset white; 
+    padding: 5px; font-family: monospace; 
+    outline: none;
+}
